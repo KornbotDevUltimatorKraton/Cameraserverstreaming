@@ -1,7 +1,7 @@
 import socket, cv2,pickle,struct
 
 server_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host_name = "192.168.1.176"
+host_name = "192.168.1.4" #using the local machine ip address of the robot host just read and send the data to the client sid for connection with random port
 host_ip = socket.gethostbyname(host_name)
 print('HOST IP:', host_ip)
 port = 1555
