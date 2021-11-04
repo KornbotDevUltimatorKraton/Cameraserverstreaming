@@ -3,7 +3,7 @@ import socket,cv2,pickle,struct
 
 #create socket 
 client_socket = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
-host_ip = "192.168.50.156"
+host_ip = "192.168.1.4" # Getting the target server ip address 
 port = 2555
 client_socket.connect((host_ip,port)) # a tuple 
 data = b"" 
